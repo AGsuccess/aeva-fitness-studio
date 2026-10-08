@@ -1,0 +1,164 @@
+/* AEVA Studio — Premium Boutique */
+:root{
+  --bg:#0a0a0a;
+  --card:#141414;
+  --card2:#1c1c1c;
+  --line:#222;
+  --text:#f6f5ef;
+  --muted:#8e8e8e;
+  --accent:#e8ff5a;
+  --radius:22px;
+  --font-serif:"Instrument Serif", Georgia, serif;
+  --font-sans:"Space Grotesk", system-ui, sans-serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;max-width:100%;overflow-x:hidden;background:var(--bg);color:var(--text);font-family:var(--font-sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img,figure,iframe{max-width:100%;display:block}
+
+/* NAVBAR */
+.navbar{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px 5%;border-bottom:1px solid var(--line);
+  position:sticky;top:0;z-index:50;
+  background:rgba(10,10,10,.85);backdrop-filter:blur(14px)
+}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--font-serif);font-size:26px;letter-spacing:3px;font-weight:400}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:26px;list-style:none;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
+.nav-links a:hover{color:var(--text)}
+.btn{
+  border:1px solid var(--line);border-radius:999px;
+  padding:13px 24px;font-size:12px;letter-spacing:1.2px;
+  text-transform:uppercase;font-weight:600;transition:.2s ease;
+  display:inline-flex;align-items:center;justify-content:center;cursor:pointer
+}
+.btn-sm{padding:9px 18px}
+.btn-primary{background:var(--accent);color:#000;border-color:var(--accent)}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(232,255,90,.2)}
+.btn-ghost:hover{background:var(--card2);border-color:#333}
+.btn-full{width:100%}
+
+/* HERO */
+.hero{
+  display:flex;gap:48px;align-items:center;
+  padding:56px 5% 72px;max-width:1400px;margin:0 auto;
+  width:100%;overflow:hidden;
+}
+.hero-content{flex:1.15;min-width:0}
+.eyebrow{font-size:11px;letter-spacing:3.2px;color:var(--muted);text-transform:uppercase;margin-bottom:22px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hero-content h1{
+  font-family:var(--font-serif);font-weight:400;
+  font-size:clamp(46px,6.2vw,84px);line-height:.92;
+  letter-spacing:-1.5px;margin-bottom:18px;
+  overflow-wrap:break-word;word-break:break-word;
+}
+.hero-content h1 em{font-style:italic;color:var(--accent);font-weight:400}
+.lead{color:var(--muted);font-size:16px;line-height:1.6;max-width:440px;margin-bottom:28px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px}
+.stats{display:flex;gap:36px;border-top:1px solid var(--line);padding-top:22px;max-width:380px}
+.stats strong{display:block;font-family:var(--font-serif);font-size:26px;line-height:1}
+.stats span{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-top:4px;display:block}
+
+.hero-media{flex:1;min-width:0}
+.media-card{
+  min-height:560px;border-radius:var(--radius);border:1px solid var(--line);
+  background:var(--card);overflow:hidden;position:relative;
+  display:flex;align-items:flex-end;justify-content:center;padding:22px;
+}
+.media-card figcaption{
+  font-size:10px;letter-spacing:2.5px;text-transform:uppercase;
+  background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.12);
+  padding:8px 14px;border-radius:999px;backdrop-filter:blur(8px)
+}
+
+/* SECTIONS */
+.section{padding:80px 5%;max-width:1400px;margin:0 auto}
+.section-head{margin-bottom:36px}
+.section-head h2{font-family:var(--font-serif);font-size:clamp(32px,4vw,48px);font-weight:400;letter-spacing:-.5px}
+.section-head p{color:var(--muted);margin-top:6px}
+
+/* SCHEDULE */
+.schedule-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.class-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;transition:.2s}
+.class-card:hover{border-color:#333;transform:translateY(-2px)}
+.class-card.accent{background:var(--accent);color:#000;border-color:var(--accent)}
+.class-card.dark{background:#000}
+.class-card .time{font-size:11px;letter-spacing:1.2px;color:var(--muted);text-transform:uppercase}
+.class-card.accent .time{color:rgba(0,0,0,.6)}
+.class-card h3{font-size:19px;margin:10px 0 4px}
+.class-card p{color:var(--muted);font-size:13px}
+.class-card.accent p{color:rgba(0,0,0,.7)}
+.class-card b{display:block;margin-top:10px;font-size:12px;letter-spacing:.5px}
+
+/* TRAINERS */
+.trainers-flex{display:flex;gap:14px;flex-wrap:wrap}
+.trainer-card{flex:1 1 220px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.avatar{width:44px;height:44px;border-radius:50%;background:var(--card2);border:1px solid var(--line);display:grid;place-items:center;font-weight:700;margin-bottom:14px}
+.trainer-card h3{font-size:17px;margin-bottom:2px}
+.trainer-card small{color:var(--muted);font-size:11px;letter-spacing:1px;text-transform:uppercase}
+.trainer-card p{margin-top:10px;font-size:13px;color:var(--muted);line-height:1.5}
+
+/* ASIDE - Testimonial */
+.testimonial{margin-top:36px;background:linear-gradient(90deg,var(--card2),var(--card));border-left:3px solid var(--accent);padding:22px 26px;border-radius:0 18px 18px 0;max-width:720px}
+.testimonial blockquote{font-family:var(--font-serif);font-size:22px;font-style:italic;line-height:1.3}
+.testimonial cite{display:block;margin-top:10px;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);font-style:normal}
+
+/* PRICING */
+.membership{background:var(--bg)}
+.pricing-flex{display:flex;gap:16px;flex-wrap:wrap;align-items:stretch}
+.price-card{flex:1 1 280px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;position:relative;display:flex;flex-direction:column}
+.price-card.popular{background:#f6f5ef;color:#000;border-color:#f6f5ef;transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.4)}
+.price-card .badge{position:absolute;top:-11px;left:26px;background:var(--accent);color:#000;font-size:10px;font-weight:800;letter-spacing:1px;padding:5px 12px;border-radius:999px}
+.price{font-family:var(--font-serif);font-size:42px;margin:14px 0 6px}
+.price span{font-family:var(--font-sans);font-size:14px;color:var(--muted)}
+.price-card.popular .price span{color:rgba(0,0,0,.6)}
+.price-card ul{list-style:none;display:grid;gap:9px;margin:18px 0 22px;color:var(--muted);font-size:13px}
+.price-card.popular ul{color:rgba(0,0,0,.7)}
+.price-card .btn{margin-top:auto}
+
+/* JOIN FORM + MAP */
+.join-section{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start;
+  background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  max-width:100%;padding:80px 5%;
+}
+.join-form{background:var(--bg);border:1px solid var(--line);border-radius:22px;padding:26px;display:grid;gap:20px}
+.join-form fieldset{border:none;display:grid;gap:12px}
+.join-form legend{font-family:var(--font-serif);font-size:20px;margin-bottom:6px}
+.join-form label{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted)}
+.join-form input[type="text"],.join-form input[type="email"],.join-form input[type="password"],.join-form input[type="date"]{
+  width:100%;background:var(--card2);border:1px solid var(--line);border-radius:12px;
+  padding:13px 14px;color:var(--text);outline:none;font-size:14px;transition:.2s
+}
+.join-form input:focus{border-color:var(--accent);background:#1e1e1e}
+.radio,.checkbox{
+  color:var(--text)!important;text-transform:none!important;
+  letter-spacing:0!important;font-size:14px!important;
+  display:flex;gap:10px;align-items:center;font-weight:400;cursor:pointer
+}
+.map-frame{border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--card2)}
+.map-frame figcaption{padding:12px 16px;font-size:11px;letter-spacing:1px;color:var(--muted);text-align:center;border-top:1px solid var(--line)}
+
+/* FOOTER */
+.footer{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:22px 5%;border-top:1px solid var(--line);
+  color:var(--muted);font-size:12px;flex-wrap:wrap;gap:12px;max-width:1400px;margin:0 auto
+}
+.footer-nav{display:flex;gap:20px}
+
+/* MOBILE RESPONSIVENESS */
+@media(max-width:900px){
+  .navbar .nav-links{display:none}
+  .hero{flex-direction:column;gap:28px;padding:28px 5% 48px}
+  .hero-content h1{font-size:50px;line-height:.95}
+  .eyebrow{white-space:normal}
+  .media-card{min-height:380px;width:100%}
+  .join-section{grid-template-columns:1fr;padding:48px 5%}
+  .price-card.popular{transform:none}
+  .stats{gap:24px}
+}
+    
+    
