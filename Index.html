@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AEVA Studio — Boutique fitness in Berlin. 12 members max, strength, mobility, conditioning. No mirrors, just work.">
+  <title>AEVA Studio — Boutique Fitness</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- SEMANTIC: header + nav -->
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="#">
+        <!-- EXTRA MEDIA: inline SVG logo - Requirement -->
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="white" stroke-width="1.5"/><path d="M9 14L12.5 17.5L19 10.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+        AEVA<span>.</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#membership">Membership</a></li>
+      </ul>
+      <a href="#join" class="btn btn-sm">Join Now</a>
+    </nav>
+
+    <section class="hero">
+      <article class="hero-content">
+        <p class="eyebrow">PRIVATE STUDIO • 12 MEMBERS MAX • EST. 2024</p>
+        <h1>Strength in<br><em>stillness,</em><br>power in motion.</h1>
+        <p class="lead">Boutique fitness. 12 members max per class. No mirrors, just work. Small groups, real coaching.</p>
+        <div class="hero-btns">
+          <a href="#schedule" class="btn btn-primary">View Schedule</a>
+          <a href="#join" class="btn btn-ghost">Start Trial</a>
+        </div>
+        <section class="stats">
+          <div><strong>500+</strong><span>Members</span></div>
+          <div><strong>12</strong><span>Trainers</span></div>
+          <div><strong>4.9</strong><span>Rating</span></div>
+        </section>
+      </article>
+      
+      <figure class="hero-media">
+        <div class="media-card" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop'); background-size: cover; background-position: center;">
+          <figcaption>PUSH • PULL • BREATHE • REPEAT</figcaption>
+        </div>
+      </figure>
+    </section>
+  </header>
+
+  <main>
+    <section id="schedule" class="section">
+      <header class="section-head">
+        <h2>Class Schedule</h2>
+        <p>Small groups. Real coaching.</p>
+      </header>
+      <section class="schedule-grid">
+        <article class="class-card"><span class="time">06:00 — 07:00</span><h3>Power Flow</h3><p>Yoga + Strength</p><b>with Aya</b></article>
+        <article class="class-card accent"><span class="time">07:30 — 08:30</span><h3>HYROX Prep</h3><p>Conditioning</p><b>with Success</b></article>
+        <article class="class-card"><span class="time">12:00 — 13:00</span><h3>Pilates Core</h3><p>Control & Breath</p><b>with Lamine</b></article>
+        <article class="class-card"><span class="time">17:30 — 18:30</span><h3>Strength Club</h3><p>Compound Lifts</p><b>with Akshit</b></article>
+        <article class="class-card"><span class="time">18:45 — 19:45</span><h3>Mobility Reset</h3><p>Recovery</p><b>with Vladislav</b></article>
+        <article class="class-card dark"><span class="time">20:00 — 21:00</span><h3>Night Sweat</h3><p>HIIT • 12 spots</p><b>with Team</b></article>
+      </section>
+    </section>
+
+    <section id="trainers" class="section">
+      <header class="section-head">
+        <h2>Trainer Bios</h2>
+        <p>Elite coaches. No ego lifting.</p>
+      </header>
+      <section class="trainers-flex">
+        <article class="trainer-card"><div class="avatar">S</div><h3>Success</h3><small>Strength & Conditioning</small><p>Ex-powerlifter. Progressive overload without ego.</p></article>
+        <article class="trainer-card"><div class="avatar">A</div><h3>Aya</h3><small>Yoga & Mobility</small><p>500hr certified. Her cues change how you breathe.</p></article>
+        <article class="trainer-card"><div class="avatar">L</div><h3>Lamine</h3><small>Pilates & Recovery</small><p>Physio. Fixes what other gyms break.</p></article>
+        <article class="trainer-card"><div class="avatar">V</div><h3>Vladislav</h3><small>HIIT & Endurance</small><p>Marathon runner. If you can talk, you're not done.</p></article>
+      </section>
+
+      <!-- SEMANTIC: aside - Requirement -->
+      <aside class="testimonial">
+        <blockquote>"AEVA is the only gym where coaching actually matters. 12 people max means they see everything."</blockquote>
+        <cite>— Member since 2024</cite>
+      </aside>
+    </section>
+
+    <section id="membership" class="section membership">
+      <header class="section-head"><h2>Membership Tiers</h2><p>Transparent pricing. Cancel anytime.</p></header>
+      <section class="pricing-flex">
+        <article class="price-card"><h3>Base</h3><div class="price">$49<span>/mo</span></div><ul><li>3 classes / week</li><li>Open gym access</li><li>App tracking</li></ul></article>
+        <article class="price-card popular"><span class="badge">Most Popular</span><h3>Unlimited</h3><div class="price">$89<span>/mo</span></div><ul><li>Unlimited classes</li><li>1x PT / month</li><li>Recovery suite</li></ul></article>
+        <article class="price-card"><h3>Elite</h3><div class="price">$149<span>/mo</span></div><ul><li>All Unlimited perks</li><li>Weekly PT + Nutrition</li><li>Private locker</li></ul></article>
+      </section>
+    </section>
+
+    <!-- SEMANTIC: form with all required inputs - Requirement -->
+    <section id="join" class="section join-section">
+      <header class="section-head">
+        <h2>Start Your Trial</h2>
+        <p>One form, 2 minute setup.</p>
+      </header>
+      
+      <form action="/submit" method="post" class="join-form">
+        <fieldset>
+          <legend>Your Details</legend>
+          
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Success Agbede" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="agbedesuccess19@gmail.com" required>
+
+          <label for="password">Create Password</label>
+          <input type="password" id="password" name="password" placeholder="Min. 8 characters" required>
+
+          <label for="startdate">Preferred Start Date</label>
+          <input type="date" id="startdate" name="startdate" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Primary Goal</legend>
+          <label class="radio"><input type="radio" name="goal" value="strength" required> Strength & Muscle</label>
+          <label class="radio"><input type="radio" name="goal" value="conditioning"> Conditioning & Fat Loss</label>
+          <label class="radio"><input type="radio" name="goal" value="mobility"> Mobility & Recovery</label>
+        </fieldset>
+
+        <fieldset>
+          <label class="checkbox"><input type="checkbox" name="terms" required> I agree to studio terms and 12-member max policy</label>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary btn-full">Create My Membership</button>
+      </form>
+
+      <!-- EXTRA MEDIA: iframe - Requirement (satisfies extra media alternative) -->
+      <figure class="map-frame">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=13.38%2C52.51%2C13.42%2C52.53&layer=mapnik" width="100%" height="220" style="border:0; border-radius:16px;" loading="lazy" title="Berlin Studio Map"></iframe>
+        <figcaption>Berlin Studio • Private Location Shared After Booking</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 AEVA Studio — Berlin • All rights reserved</p>
+    <nav class="footer-nav"><a href="#schedule">Schedule</a><a href="#trainers">Trainers</a><a href="#join">Join</a></nav>
+  </footer>
+
+</body>
+</html>
